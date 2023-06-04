@@ -1,3 +1,5 @@
+![alt text](reto_java.png "Reto")
+
 ## 30 días de proyectos en Java
 
 La idea de este proyecto es facilitar una vía para que pudan practicar con ejercicios sencillos; no hace falta tener conocimientos avanzados para participar, esta metodología busca incentivar el crecimieento de conocimiento mediante la búsqueda de lo requerido para completar cada reto.
