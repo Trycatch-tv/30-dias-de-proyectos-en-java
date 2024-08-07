@@ -16,18 +16,20 @@ public class ExerciseTwo {
                 break;
             case 2:
 
-            util.restar();    
+            System.out.println(util.restar());
                 break;
             case 3:
-                util.multiplicar();
+                System.out.println(util.multiplicar());
                 break;
             case 4:
-                util.dividir();
+                System.out.println(util.dividir());
                 break;
             
             default:
                 break;
         }
+
+        sc.close();
 
         
 
