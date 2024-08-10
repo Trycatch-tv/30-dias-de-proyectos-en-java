@@ -1,5 +1,5 @@
 package ExercisesJava.ExerciseSix;
 
-public record Libro(String autor, String titulo, Integer anioPubliacion) {
+public record Libro(String titulo, String autor, Integer anioPubliacion) {
 }
 
