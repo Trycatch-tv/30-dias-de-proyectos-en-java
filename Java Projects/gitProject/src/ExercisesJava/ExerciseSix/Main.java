@@ -1,7 +1,5 @@
 package ExercisesJava.ExerciseSix;
 
-import java.util.stream.Collectors;
-
 import ExercisesJava.ExerciseSix.util.BibliotecaUtil;
 
 public class Main {
@@ -9,14 +7,7 @@ public class Main {
         
         BibliotecaUtil bu = new BibliotecaUtil();
 
-
-
-        bu.buscarLibros();
-
-    
-
-        
-      
+        bu.menuBiblioteca();
 
     }
 }

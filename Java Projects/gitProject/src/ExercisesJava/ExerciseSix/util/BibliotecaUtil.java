@@ -22,13 +22,59 @@ public class BibliotecaUtil {
 
     }
 
+    public void volver(){
+
+    }
+
     public void menuBiblioteca() {
+
+        boolean salir = true;
+
+        while (salir) {
+
+            System.out.println("¡Bienvenido a la biblioteca! Elige una de las opciones:\n1.- Ver librería\n2.- Añadir libro\n3.- Eliminar libro\n4.- Buscar libro\n5.- Salir");
+
+            int option = sc.nextInt();
+            sc.nextLine();
+            switch (option) {
+                case 1:
+
+                    lista.forEach(x -> System.out.println(x));
+                          
+                    break;  
+                case 2:
+                    
+                    aniadirLibro();
+                
+                    break;
+                case 3:
+
+                    buscarLibros();
+                    
+                    break;
+                case 4:
+
+                    eliminarLibro();
+                    
+                    break;
+                case 5:
+
+                    salir = false;
+                    
+                    break;
+            
+                default:
+                System.out.println("La opción seleccionada no existe");
+                    break;
+            }
+
+        }
 
     }
 
     public void aniadirLibro() {
 
-        System.out.println("Ingrese autor, nombre y año de estreno respectivamente");
+        System.out.println("Ingrese nombre, autor y año de estreno respectivamente");
 
         String autor = sc.nextLine();
         String nombre = sc.nextLine();
@@ -60,7 +106,7 @@ public class BibliotecaUtil {
                 System.out.println("Ingrese nombre del autor: ");
                 String parametroAutor = sc.nextLine();
                 System.out.println(
-                    lista.stream().filter(x -> x.autor().contains(parametroAutor)).collect(Collectors.toList()));
+                        lista.stream().filter(x -> x.autor().contains(parametroAutor)).collect(Collectors.toList()));
                 break;
 
             case 2:
