@@ -9,7 +9,7 @@ public class DibujoAhorcado {
     //Creo un hash map para cada parte del ahorcado según el número de errores
     Map<Integer, String> estadoAhorcado = new HashMap<>();
 
-    public void DibujoAhorcado(int numeroError) {
+    public DibujoAhorcado() {
 
         estadoAhorcado.put(6, """
         ______
