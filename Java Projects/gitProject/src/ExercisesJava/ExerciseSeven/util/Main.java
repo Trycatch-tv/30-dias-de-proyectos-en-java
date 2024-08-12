@@ -5,7 +5,7 @@ public class Main {
 	public static void main(String[] args) {
 		System.out.println("Hola!!!");
 		
-		System.out.println("Última pruebaaaaaaaaaaaaaaa"); 
+		System.out.println("Primer prueba"); 
 
 
 
