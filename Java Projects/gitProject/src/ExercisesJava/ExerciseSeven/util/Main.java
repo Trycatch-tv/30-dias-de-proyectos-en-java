@@ -7,6 +7,8 @@ public class Main {
 		DibujoAhorcado da = new DibujoAhorcado();
 		System.out.println(da.estadoAhorcado.get(0));
 
+		System.out.println(da.estadoAhorcado.get(5));
+
 
 
 
