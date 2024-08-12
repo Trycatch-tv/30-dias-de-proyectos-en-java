@@ -12,7 +12,7 @@ public class BibliotecaUtil {
 
     Libro[] dataSet = CSVReader.read("C:\\Users\\Asus\\Downloads\\libros.csv");
 
-    public ArrayList<Libro> lista = new ArrayList<>();
+    ArrayList<Libro> lista = new ArrayList<>();
 
     public BibliotecaUtil() {
 
@@ -20,9 +20,6 @@ public class BibliotecaUtil {
             lista.add(libro);
         }
 
-    }
-
-    public void volver(){
 
     }
 
@@ -32,7 +29,7 @@ public class BibliotecaUtil {
 
         while (salir) {
 
-            System.out.println("¡Bienvenido a la biblioteca! Elige una de las opciones:\n1.- Ver librería\n2.- Añadir libro\n3.- Eliminar libro\n4.- Buscar libro\n5.- Salir");
+            System.out.println("¡Bienvenido a la biblioteca! Elige una de las opciones:\n1.- Ver librería\n2.- Añadir libro\n3.- Buscar\n4.- Eliminar\n5.- Salir");
 
             int option = sc.nextInt();
             sc.nextLine();
