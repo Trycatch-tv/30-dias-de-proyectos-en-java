@@ -13,7 +13,6 @@ public class UtilAhorcado {
     private static int vidas;
     private String palabra;
     private StringBuilder palabraOculta;
-    private Set<Character> letrasAdivinadas;
 
     public UtilAhorcado() {
         vidas = 6;
@@ -26,7 +25,7 @@ public class UtilAhorcado {
         System.out.println("Palabra:");
         this.palabra = sc.nextLine();
         this.palabraOculta = new StringBuilder();
-        this.letrasAdivinadas = new HashSet<>();
+        Set<Character> letrasAdivinadas = new HashSet<>();
         inicializandoPalabraOculta();
         System.out.println(palabraOculta);
         while (vidas > 0 && palabraOculta.indexOf("-") !=-1) {
@@ -41,10 +40,7 @@ public class UtilAhorcado {
 
     public void inicializandoPalabraOculta() {
 
-        for (int i = 0; i < palabra.length(); i++) {
-
-            palabraOculta.append('-');
-        }
+        palabraOculta.append("-".repeat(palabra.length()));
 
     }
 
