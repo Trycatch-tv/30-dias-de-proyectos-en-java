@@ -1,15 +1,13 @@
 package ExercisesJava.ExerciseSeven.util;
 
+import ExercisesJava.ExerciseFive.Util;
+
 public class Main {
 
 	public static void main(String[] args) {
 
-		DibujoAhorcado da = new DibujoAhorcado();
-		System.out.println(da.estadoAhorcado.get(0));
 
-		System.out.println(da.estadoAhorcado.get(5));
-
-
+		UtilAhorcado ua = new UtilAhorcado();
 
 
 	}
