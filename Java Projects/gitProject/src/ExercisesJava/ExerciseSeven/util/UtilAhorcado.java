@@ -1,10 +1,6 @@
 package ExercisesJava.ExerciseSeven.util;
 
-import ExercisesJava.ExerciseFive.Util;
-
-import java.util.HashSet;
 import java.util.Scanner;
-import java.util.Set;
 
 public class UtilAhorcado {
 
@@ -25,7 +21,6 @@ public class UtilAhorcado {
         System.out.println("Palabra:");
         this.palabra = sc.nextLine();
         this.palabraOculta = new StringBuilder();
-        Set<Character> letrasAdivinadas = new HashSet<>();
         inicializandoPalabraOculta();
         System.out.println(palabraOculta);
         while (vidas > 0 && palabraOculta.indexOf("-") !=-1) {
