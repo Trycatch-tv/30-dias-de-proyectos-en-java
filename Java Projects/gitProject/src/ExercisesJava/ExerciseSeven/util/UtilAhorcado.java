@@ -75,6 +75,7 @@ public class UtilAhorcado {
             vidas -= 1;
             System.out.println(du.estadoAhorcado.get(vidas));
 
+            if (vidas == 0) System.out.println("Has perdido unu");
 
         }
 
