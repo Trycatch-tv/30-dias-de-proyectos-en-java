@@ -1,0 +1,16 @@
+# Ignorar configuración de IntelliJ IDEA
+.idea/
+*.iml
+
+# Ignorar otros archivos y directorios específicos del entorno
+*.class
+*.log
+*.tmp
+
+# Ignorar carpetas específicas del sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos generados
+target/
+build/
