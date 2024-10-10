@@ -1,26 +1,26 @@
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Prestamo {
     Socio socio;
     Libro libro;
-    Date fechaRetiro;
-    boolean estadoP = false;
-    Date fechaDevolucion;
+    LocalDate fechaRetiro;
+    boolean activo;
+    LocalDate fechaDevolucion;
 
-    public Prestamo(Date fechaRetiro, Libro libro, Socio socio, boolean estadoP, Date fechaDevolucion) {
+    public Prestamo(LocalDate fechaRetiro, Libro libro, Socio socio, boolean activo, LocalDate fechaDevolucion) {
         this.fechaRetiro = fechaRetiro;
         this.libro = libro;
         this.socio = socio;
-        this.estadoP = estadoP;
+        this.activo = true;
         this.fechaDevolucion = fechaDevolucion;
     }
 
-    public Date getFecha() {
+    public LocalDate getFecha() {
         return fechaRetiro;
     }
 
-    public void setFechaRetiro(Date fechaRetiro) {
+    public void setFechaRetiro(LocalDate fechaRetiro) {
         this.fechaRetiro = fechaRetiro;
     }
 
@@ -40,19 +40,19 @@ public class Prestamo {
         this.socio = socio;
     }
 
-    public boolean isEstadoP() {
-        return estadoP;
+    public boolean isActivo() {
+        return activo;
     }
 
-    public void setEstadoP(boolean estadoP) {
-        this.estadoP = estadoP;
+    public void setEstadoP(boolean activo) {
+        this.activo = activo;
     }
 
-    public Date getFechaDevolucion() {
+    public LocalDate getFechaDevolucion() {
         return fechaDevolucion;
     }
 
-    public void setFechaDevolucion(Date fechaDevolucion) {
+    public void setFechaDevolucion(LocalDate fechaDevolucion) {
         this.fechaDevolucion = fechaDevolucion;
     }
     
